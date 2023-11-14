@@ -31,7 +31,11 @@ public class Index {
         // obj6.update();
 
         // !Delete Record 
-        DeleteRecord obj7=new DeleteRecord();
-        obj7.delete();
+        // DeleteRecord obj7=new DeleteRecord();
+        // obj7.delete();
+
+        // ! Update Table field Name
+        UpdateTableStructure obj8=new UpdateTableStructure();
+        obj8.updateTableStructure();
     }
 }
