@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class DeleteRecord {
-      public void delete() {
+    public void delete() {
         try {
             String URl = "jdbc:mysql://localhost:3306/student";
             String username = "root";
@@ -14,11 +14,12 @@ public class DeleteRecord {
             Connection con = DriverManager.getConnection(URl, username, password);
             // Delete record of table
             String query = "delete from personal where rollno=1";
-            
-Statement stm=con.createStatement();
-       int res=stm.executeUpdate(query);
-            System.out.println("Delete Successfully .Total Affected = " + res);
 
+            Statement stm = con.createStatement();
+            int res = stm.executeUpdate(query);
+            System.out.println("Delete Successfully .Total Affected = " + res);
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -29,7 +29,7 @@ public class ReadData {
                 System.out.println("class = " + rs.getString(5));
             }
 
-            // ! way2 single line 
+            // ! way2 single line
             while (rs.next()) {
                 int rollno = rs.getInt("rollno");
                 String name = rs.getString("sname");
@@ -40,6 +40,9 @@ public class ReadData {
                 System.out.println(rollno + " " + name + " " + email + " " + mobile + " " + className);
 
             }
+
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

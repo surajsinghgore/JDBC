@@ -20,7 +20,8 @@ public class InsertRecord {
             Statement stm = con.createStatement();
             stm.execute(query);
             System.out.println("Record successfully inserted in table");
-
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -44,7 +45,8 @@ public class InsertRecord {
             pstm.setString(5, "ba-5");
             pstm.execute();
             System.out.println("Record successfully inserted using prepared Statement in table");
-
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

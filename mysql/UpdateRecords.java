@@ -5,7 +5,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-
 public class UpdateRecords {
     public void update() {
         try {
@@ -21,7 +20,8 @@ public class UpdateRecords {
 
             int res = pstm.executeUpdate();
             System.out.println(" Update Successfully .Total Affected = " + res);
-
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

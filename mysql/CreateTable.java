@@ -20,7 +20,8 @@ public class CreateTable {
             Statement stm = con.createStatement();
             stm.executeUpdate(query);
             System.out.println("Successfully Table Created In Database");
-
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

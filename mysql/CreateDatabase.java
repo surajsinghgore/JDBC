@@ -25,7 +25,8 @@ public class CreateDatabase {
             Statement stm = con.createStatement();
             stm.executeUpdate(query);
             System.out.println("Successfully Established Connection With Database");
-
+            // close connection
+            con.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
