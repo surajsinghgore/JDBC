@@ -19,7 +19,12 @@ public class Index {
         // obj4.usingPreparedStatement();
 
         // ! Read Data
-        ReadData obj5=new ReadData();
-        obj5.readData();
+        // ReadData obj5=new ReadData();
+        // obj5.readData();
+
+
+        // ! Update Record
+        UpdateRecords obj6=new UpdateRecords();
+        obj6.update();
     }
 }
