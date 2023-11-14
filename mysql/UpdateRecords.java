@@ -20,7 +20,7 @@ public class UpdateRecords {
             pstm.setInt(2, 1);
 
             int res = pstm.executeUpdate();
-            System.out.println("read Update Succeessfully .Total Affected = " + res);
+            System.out.println(" Update Successfully .Total Affected = " + res);
 
         } catch (Exception e) {
             e.printStackTrace();

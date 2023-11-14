@@ -2,12 +2,15 @@ import mysql.*;
 
 public class Index {
     public static void main(String[] args) {
+
         // ! Established Connection With Database
         // EstablishedConnection obj1 = new EstablishedConnection();
         // obj1.establishedConnection();
+
         // ! create database in mysql
         // CreateDatabase obj2 = new CreateDatabase();
         // obj2.createDB();
+
         // ! CreateTable obj3=new CreateTable();
         // ? way 1 using statement
         // obj3.createTable();
@@ -24,7 +27,11 @@ public class Index {
 
 
         // ! Update Record
-        UpdateRecords obj6=new UpdateRecords();
-        obj6.update();
+        // UpdateRecords obj6=new UpdateRecords();
+        // obj6.update();
+
+        // !Delete Record 
+        DeleteRecord obj7=new DeleteRecord();
+        obj7.delete();
     }
 }
