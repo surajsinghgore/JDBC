@@ -11,10 +11,15 @@ public class Index {
         // ! CreateTable obj3=new CreateTable();
         // ? way 1 using statement
         // obj3.createTable();
-        InsertRecord obj4 = new InsertRecord();
+
+        // ! Insert Record
+        // InsertRecord obj4 = new InsertRecord();
         // obj4.usingStatement();
         // ? way 2 using preparedStatement
+        // obj4.usingPreparedStatement();
 
-        obj4.usingPreparedStatement();
+        // ! Read Data
+        ReadData obj5=new ReadData();
+        obj5.readData();
     }
 }

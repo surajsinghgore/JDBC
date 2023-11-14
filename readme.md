@@ -73,9 +73,8 @@ Java , MYSQL
 | Method | Return Val     | Description                |
 | :-------- | :------- | :------------------------- |
 | `execute()` | ***true*** => ResultSet ***false*** => Not ResultSet | use to perform all operation |
-| `executeQuery()` | ***int value***. 1 record affected|use to perform DML command (Insert,Update,Delete) |
-| `executeUpdate()` | ***ResultSet***, Error if no ResultSet return| retrieve data from database |
-
+| `executeUpdate()` | ***int value***. 1 record affected|use to perform DML command (Insert,Update,Delete) |
+| `executeQuery()` | ***ResultSet***, Error if no ResultSet return| retrieve data from database |
 
 
 
