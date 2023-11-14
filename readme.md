@@ -65,6 +65,20 @@ Java , MYSQL
 
 
 
+## Important method
+
+#### statement execute methods
+
+
+| Method | Return Val     | Description                |
+| :-------- | :------- | :------------------------- |
+| `execute()` | ***true*** => ResultSet ***false*** => Not ResultSet | use to perform all operation |
+| `executeQuery()` | ***int value***. 1 record affected|use to perform DML command (Insert,Update,Delete) |
+| `executeUpdate()` | ***ResultSet***, Error if no ResultSet return| retrieve data from database |
+
+
+
+
 ## Authors
 
 - [@surajsingh](https://www.linkedin.com/in/surajsinghgore)
